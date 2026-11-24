@@ -7,7 +7,7 @@ WORKDIR /app
 
 COPY package.json ./
 
-RUN npm ci
+RUN npm i
 
 COPY . .
 
@@ -44,7 +44,7 @@ RUN python3 -m venv /opt/forecast-venv && \
 # Node production dependencies
 COPY package.json ./
 
-RUN npm ci --omit=dev && \
+RUN npm i --omit=dev && \
     npm cache clean --force
 
 # Frontend
