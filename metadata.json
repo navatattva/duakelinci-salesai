@@ -1,0 +1,6 @@
+{
+  "name": "Rekap Penjualan & Ringkasan Telegram",
+  "description": "Dashboard analitik penjualan per region dan brand, deteksi 5 outlet terlemah, pembersihan data invoice, serta generator ringkasan eksekutif satu paragraf untuk Telegram.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

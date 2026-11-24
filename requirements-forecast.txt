@@ -1,0 +1,8 @@
+# Dependensi ringan untuk Python Hybrid Forecast CLI (terpasang otomatis di Dockerfile)
+numpy>=1.26,<3.0
+pandas>=2.2,<3.0
+statsmodels>=0.14,<1.0
+scikit-learn>=1.5,<2.0
+
+# Opsional untuk server dengan RAM >= 8 GB jika ingin mengaktifkan AutoGluon TimeSeries:
+# autogluon.timeseries>=1.1,<1.5
