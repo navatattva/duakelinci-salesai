@@ -5,7 +5,7 @@ FROM node:22-slim AS builder
 
 WORKDIR /app
 
-COPY package.json package-lock.json ./
+COPY package.json ./
 
 RUN npm ci
 
@@ -42,7 +42,7 @@ RUN python3 -m venv /opt/forecast-venv && \
     /opt/forecast-venv/bin/pip install --no-cache-dir -r requirements-forecast.txt
 
 # Node production dependencies
-COPY package.json package-lock.json ./
+COPY package.json ./
 
 RUN npm ci --omit=dev && \
     npm cache clean --force
